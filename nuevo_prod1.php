@@ -7,19 +7,16 @@
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alta de Producto</title>
+<title>Nuevo pokemon</title>
 <style type="text/css">
 @import url("css/mycss.css");
 </style>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
 </head>
-<body>
+<body background="fondo.jpg">
 <div class="todo">
   
-  <div id="cabecera">
-  	<img src="images/swirl.png" width="1188" id="img1">
-  </div>
   
   <div id="contenido">
   	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
@@ -36,8 +33,19 @@
   		<input type="text" id="Nombre" name="Nombre"><br>
   		
   		<label>Tipo: </label>
-  		<input type="text" id="Tipo" name="Tipo" ><br>
-		  
+  		
+		  <select type="text" id="Tipo" name="Tipo" class="form-control form-control-sm">
+		  <?php
+
+          $query = $conexion -> query ("SELECT * FROM Tipo");
+          while ($valores = mysqli_fetch_array($query)) {
+
+echo '<option value="'.$valores[ID].'">'.$valores[Tipo].'</option>';
+          }
+        ?>
+  
+</select>
+
 		  <label>Ataque1: </label>
   		<input type="text" id="Ataque1" name="Ataque1"><br>
   		
@@ -51,9 +59,18 @@
   		<input type="text" id="Ataque4" name="Ataque4" ><br>
 		  
 		  <label>Region: </label>
-  		<input type="text" id="Region" name="Region"><br>
   		
-  		
+		  <select type="text" id="Region" name="Region" class="form-control form-control-sm">
+		  <?php
+
+          $query = $conexion -> query ("SELECT * FROM Region");
+          while ($valores = mysqli_fetch_array($query)) {
+
+echo '<option value="'.$valores[ID].'">'.$valores[Region].'</option>';
+          }
+        ?>
+  
+</select>
   	
   		
   		<br>
@@ -63,9 +80,7 @@
   	
   </div>
   
-	<div id="footer">
-  		<img src="images/swirl2.png" id="img2">
-  	</div>
+	
 
 </div>
 
