@@ -6,9 +6,9 @@ include "conexion.php";
 
 	function EliminarProducto($ID)
 	{
-		$servidor = "localhost:3307";
-$usuario = "root";
-		$conexion = mysqli_connect( $servidor, $usuario, "","pokedex" );
+			$servidor = "localhost:3307";
+	$usuario = "root";
+			$conexion = mysqli_connect( $servidor, $usuario, "","pokedex" );
 		$sentencia="DELETE FROM pokemon WHERE ID = $ID ";
 	
 		mysqli_query($conexion,$sentencia);

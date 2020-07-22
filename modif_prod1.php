@@ -62,15 +62,34 @@ $usuario = "root";
   		<br>
 	  <form action="modif_prod2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
       <input type="hidden" name="ID" value="<?php echo $_GET['ID']?> ">
-  		<label>Id Producto: </label>
-  		<input type="text" id="id_producto" name="id_producto"; value="<?php echo $consulta[0] ?>" ><br>
+  		<label>Foto: </label>
+  		<input type="file" id="Foto" name="Foto"; value="<?php echo $consulta[0] ?>" ><br>
   		
-  		<label>Producto: </label>
-  		<input type="text" id="producto" name="producto" value="<?php echo $consulta[1] ?>"><br>
+  		<label>Nombre: </label>
+  		<input type="text" id="Nombre" name="Nombre" value="<?php echo $consulta[1] ?>"><br>
+      
+      <label>Tipo: </label>
+  		<input type="text" id="Tipo" name="Tipo"; value="<?php echo $consulta[2] ?>" ><br>
   		
-  		<label>Descripcion: </label>
-  		<textarea style="border-radius: 10px;" rows="3" cols="50" name="descripcion"> <?php echo $consulta[2] ?> </textarea><br>
+  		<label>Ataque1: </label>
+  		<input type="text" id="Ataque1" name="Ataque1" value="<?php echo $consulta[3] ?>"><br>
+      
+      <label>Ataque2: </label>
+  		<input type="text" id="Ataque2" name="Ataque2"; value="<?php echo $consulta[4] ?>" ><br>
   		
+  		<label>Ataque3: </label>
+  		<input type="text" id="Ataque3" name="Ataque3" value="<?php echo $consulta[5] ?>"><br>
+      
+      <label>Ataque4: </label>
+  		<input type="text" id="Ataque4" name="Ataque4"; value="<?php echo $consulta[6] ?>" ><br>
+  		
+  		<label>Region: </label>
+  		<input type="text" id="producto" name="producto" value="<?php echo $consulta[8] ?>"><br>
+      
+     
+  	
+  		
+  	
   		<br>
   		<button type="submit" class="btn btn-success">Guardar</button>
      </form>
