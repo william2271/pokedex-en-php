@@ -3,10 +3,14 @@
 
   $consulta=ConsultarProducto($_GET['ID']);
 
-  function ConsultarProducto($nombre)
+  function ConsultarProducto($ID)
   {
-    $sentencia="SELECT * FROM pokemon WHERE Nombre='".$nombre."' ";
-    $resultado=mysqli_query("pokedex","SELECT * FROM pokemon WHERE Nombre='".$nombre."' ");
+
+    $servidor = "localhost:3307";
+$usuario = "root";
+		$conexion = mysqli_connect( $servidor, $usuario, "","pokedex" );
+    $sentencia="SELECT * FROM pokemon WHERE ID=$ID  ";
+    $resultado=mysqli_query($conexion,$sentencia);
     $filas=mysqli_fetch_assoc($resultado);
     return [
     
