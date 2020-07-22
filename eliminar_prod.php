@@ -1,12 +1,13 @@
 <?php
 	include "conexion.php";
 
-	EliminarProducto($_GET['no']);
+	EliminarProducto($_GET['ID']);
 
-	function EliminarProducto($no)
+	function EliminarProducto($ID)
 	{
-		$sentencia="DELETE FROM productos WHERE no='".$no."' ";
-		$mysqli->set_charset($sentencia) or die (mysqli_error($conexion));
+		$sentencia="DELETE FROM productos WHERE no='".$ID."' ";
+		mysqli_set_charset("",$sentencia);
+		
 	}
 ?>
 

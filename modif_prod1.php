@@ -1,13 +1,13 @@
 <?php
   include 'conexion.php';
 
-  $consulta=ConsultarProducto($_GET['no']);
+  $consulta=ConsultarProducto($_GET['ID']);
 
   function ConsultarProducto($no_prod)
   {
     $sentencia="SELECT * FROM productos WHERE no='".$no_prod."' ";
-    $resultado=mysql_query($sentencia) or die (mysql_error());
-    $filas=mysql_fetch_assoc($resultado);
+    $resultado=mysqli_query("pokedex","SELECT * FROM productos WHERE no='".$no_prod."' ");
+    $filas=mysqli_fetch_assoc($resultado);
     return [
       $filas['id_producto'],
       $filas['nombre'],
@@ -28,12 +28,6 @@
 @import url("css/mycss.css");
 </style>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 </head>
 <body>
 <div class="todo">
