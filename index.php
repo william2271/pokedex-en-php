@@ -46,8 +46,8 @@
           echo "<td>"; echo $filas['Ataque3']; echo "</td>";
           echo "<td>"; echo $filas['Ataque4']; echo "</td>";
           echo "<td>"; echo $filas['Region']; echo "</td>";
-          echo "<td>  <a href='modif_prod1.php?no=".$filas['ID']."'> <button type='button' class='btn btn-success'>Modificar</button> </a> </td>";
-          echo "<td> <a href='eliminar_prod.php?no=".$filas['ID']."''><button type='button' class='btn btn-danger'>Eliminar</button></a> </td>";
+          echo "<td>  <a href='modif_prod1.php?ID=".$filas['ID']."'> <button type='button' class='btn btn-success'>Modificar</button> </a> </td>";
+          echo "<td> <a href='eliminar_prod.php?ID=".$filas['ID']."''><button type='button' class='btn btn-danger'>Eliminar</button></a> </td>";
         echo "</tr>";
       }
 
