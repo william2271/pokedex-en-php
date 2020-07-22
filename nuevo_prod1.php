@@ -26,14 +26,35 @@
   		<span> <h1>Alta de Nuevo Producto</h1> </span>
   		<br>
 	  <form action="nuevo_prod2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
-  		<label>Id Producto: </label>
-  		<input type="text" id="id_producto" name="id_producto"><br>
+  		<label>ID: </label>
+  		<input type="text" id="ID" name="ID"><br>
   		
-  		<label>Producto: </label>
-  		<input type="text" id="producto" name="producto" ><br>
+  		<label>FOTO: </label>
+  		<input type="file" id="Foto" name="Foto" ><br>
+		  
+		  <label>Nombre: </label>
+  		<input type="text" id="Nombre" name="Nombre"><br>
   		
-  		<label>Descripcion: </label>
-  		<textarea style="border-radius: 10px;" rows="3" cols="50" name="descripcion" ></textarea><br>
+  		<label>Tipo: </label>
+  		<input type="text" id="Tipo" name="Tipo" ><br>
+		  
+		  <label>Ataque1: </label>
+  		<input type="text" id="Ataque1" name="Ataque1"><br>
+  		
+  		<label>Ataque2: </label>
+  		<input type="text" id="Ataque2" name="Ataque2" ><br>
+		  
+		  <label>Ataque3: </label>
+  		<input type="text" id="Ataque3" name="Ataque3"><br>
+  		
+  		<label>Ataque4: </label>
+  		<input type="text" id="Ataque4" name="Ataque4" ><br>
+		  
+		  <label>Region: </label>
+  		<input type="text" id="Region" name="Region"><br>
+  		
+  		
+  	
   		
   		<br>
   		<button type="submit" class="btn btn-success">Guardar</button>

@@ -1,13 +1,17 @@
 <?php
-	include "conexion.php";
+
+include "conexion.php";
 
 	EliminarProducto($_GET['ID']);
 
 	function EliminarProducto($ID)
 	{
-		$sentencia="DELETE FROM productos WHERE no='".$ID."' ";
-		mysqli_set_charset("",$sentencia);
-		
+		$servidor = "localhost:3307";
+$usuario = "root";
+		$conexion = mysqli_connect( $servidor, $usuario, "","pokedex" );
+		$sentencia="DELETE FROM pokemon WHERE ID = $ID ";
+	
+		mysqli_query($conexion,$sentencia);
 	}
 ?>
 

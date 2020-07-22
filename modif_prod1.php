@@ -3,15 +3,31 @@
 
   $consulta=ConsultarProducto($_GET['ID']);
 
-  function ConsultarProducto($no_prod)
+  function ConsultarProducto($nombre)
   {
-    $sentencia="SELECT * FROM productos WHERE no='".$no_prod."' ";
-    $resultado=mysqli_query("pokedex","SELECT * FROM productos WHERE no='".$no_prod."' ");
+    $sentencia="SELECT * FROM pokemon WHERE Nombre='".$nombre."' ";
+    $resultado=mysqli_query("pokedex","SELECT * FROM pokemon WHERE Nombre='".$nombre."' ");
     $filas=mysqli_fetch_assoc($resultado);
     return [
-      $filas['id_producto'],
-      $filas['nombre'],
-      $filas['descripcion']
+    
+
+
+       $filas['ID'],
+      $filas['Foto'],
+      $filas['Nombre'],
+       $filas['Tipo'],
+      $filas['Ataque1'],
+      $filas['Ataque2'],
+       $filas['Ataque3'],
+       $filas['Ataque4'],
+      $filas['Region']
+
+
+
+
+
+
+
     ];
 
   }
@@ -41,7 +57,7 @@
   		<span> <h1>Modificar Producto</h1> </span>
   		<br>
 	  <form action="modif_prod2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
-      <input type="hidden" name="no" value="<?php echo $_GET['no']?> ">
+      <input type="hidden" name="ID" value="<?php echo $_GET['ID']?> ">
   		<label>Id Producto: </label>
   		<input type="text" id="id_producto" name="id_producto"; value="<?php echo $consulta[0] ?>" ><br>
   		
