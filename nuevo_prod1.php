@@ -23,8 +23,8 @@
   		<span> <h1>Alta de Nuevo Producto</h1> </span>
   		<br>
 	  <form action="nuevo_prod2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
-  		<label>ID: </label>
-  		<input type="text" id="ID" name="ID"><br>
+  		
+  		<input type="hidden" id="ID" name="ID"><br>
   		
   		<label>FOTO: </label>
   		<input type="file" id="Foto" name="Foto" ><br>
@@ -70,7 +70,7 @@ echo '<option value="'.$valores['Region'].'">'.$valores['Region'].'</option>';
           }
         ?>
   
-</select>
+</select>                 
   	
   		
   		<br>
