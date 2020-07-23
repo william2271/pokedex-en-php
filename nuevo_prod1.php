@@ -34,13 +34,13 @@
   		
   		<label>Tipo: </label>
   		
-		  <select type="text" id="Tipo" name="Tipo" class="form-control form-control-sm">
+		  <select id="Tipo" name="Tipo" class="form-control form-control-sm">
 		  <?php
 
           $query = $conexion -> query ("SELECT * FROM Tipo");
           while ($valores = mysqli_fetch_array($query)) {
 
-echo '<option value="'.$valores[ID].'">'.$valores[Tipo].'</option>';
+echo '<option value="'.$valores['Tipo'].'">'.$valores['Tipo'].'</option>';
           }
         ?>
   
@@ -60,13 +60,13 @@ echo '<option value="'.$valores[ID].'">'.$valores[Tipo].'</option>';
 		  
 		  <label>Region: </label>
   		
-		  <select type="text" id="Region" name="Region" class="form-control form-control-sm">
+		  <select id="Region" name="Region" class="form-control form-control-sm">
 		  <?php
 
           $query = $conexion -> query ("SELECT * FROM Region");
           while ($valores = mysqli_fetch_array($query)) {
 
-echo '<option value="'.$valores[ID].'">'.$valores[Region].'</option>';
+echo '<option value="'.$valores['Region'].'">'.$valores['Region'].'</option>';
           }
         ?>
   

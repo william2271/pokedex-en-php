@@ -4,7 +4,7 @@
 <script src="/js/jquery-3.5.1.min.js"></script> 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ejemplo de interaccion con DB</title>
+<title>Pokemon</title>
 <style type="text/css">
 @import url("css/mycss.css");
 </style>
@@ -41,6 +41,7 @@
         echo "<tr>";
           echo "<td>"; echo $filas['ID']; echo "</td>";
           echo "<td>"; echo $filas['Foto']; echo "</td>";
+         
           echo "<td>"; echo $filas['Nombre']; echo "</td>";
           echo "<td>"; echo $filas['Tipo']; echo "</td>";
           echo "<td>"; echo $filas['Ataque1']; echo "</td>";
