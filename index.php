@@ -31,7 +31,7 @@
         <th>Ataque3</th>
         <th>Ataque4</th>
         <th>Region</th>
-        <th> <a href="nuevo_prod1.php"> <button type="button" class="btn btn-info">Nuevo</button> </a> </th>
+        <th> <a href="nuevoP1.php"> <button type="button" class="btn btn-info">Nuevo</button> </a> </th>
         <th> <a href="nuevoT1.php"> <button type="button" class="btn btn-info">Nuevo Tipo</button> </a> </th>
         <th> <a href="nuevoR1.php"> <button type="button" class="btn btn-info">Nueva Region</button> </a> </th>
   		</thead>
