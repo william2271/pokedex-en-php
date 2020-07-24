@@ -8,9 +8,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nuevo pokemon</title>
-<style type="text/css">
-@import url("css/mycss.css");
-</style>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -20,7 +17,7 @@
   
   <div id="contenido">
   	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
-  		<span> <h1>Alta de Nuevo Producto</h1> </span>
+  		<span> <h1>Registrar pokemon</h1> </span>
   		<br>
 	  <form action="nuevo_prod2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
   		

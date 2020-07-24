@@ -1,9 +1,9 @@
 <?php
   include 'conexion.php';
 
-  $consulta=ConsultarProducto($_GET['ID']);
+  $consulta=ConsultarTipo($_GET['ID']);
  
-  function ConsultarProducto($ID)
+  function ConsultarTipo($ID)
   {
 
     $servidor = "localhost:3307";
@@ -36,10 +36,7 @@ $usuario = "root";
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Modificar Region</title>
-<style type="text/css">
-@import url("css/mycss.css");
-</style>
+<title>Modificar Tipo</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 </head>
 <body background="fondo.jpg">
@@ -47,7 +44,7 @@ $usuario = "root";
 
 <div id="contenido">
   	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
-  		<span> <h1>Modificar</h1> </span>
+  		<span> <h1>Modificar Tipo</h1> </span>
   		<br>
 	  <form action="modT2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
   	<input type="hidden" name="ID" value="<?php echo $_GET['ID']?> ">

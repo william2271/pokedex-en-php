@@ -1,9 +1,9 @@
 <?php
 	include 'conexion.php';
 
-	NuevoProducto($_POST['Region'],$_POST['ID']);
+	NuevoRegion($_POST['Region'],$_POST['ID']);
 
-	function NuevoProducto($Region,$ID)
+	function NuevoRegion($Region,$ID)
 	{
 		$servidor = "localhost:3307";
 		$usuario = "root";
@@ -15,6 +15,6 @@
 ?>
 
 <script type="text/javascript">
-	alert("Producto Ingresado exitosamente");
+	alert("Region Ingresado exitosamente");
 	window.location.href='nuevoR1.php';
 </script>

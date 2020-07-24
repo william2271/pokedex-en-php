@@ -16,6 +16,6 @@ include "conexion.php";
 ?>
 
 <script type="text/javascript">
-	alert("Producto Eliminado exitosamente");
+	alert("Pokemon Eliminado exitosamente");
 	window.location.href='index.php';
 </script>

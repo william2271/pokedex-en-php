@@ -6,9 +6,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pokemon</title>
-<style type="text/css">
-@import url("css/mycss.css");
-</style>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -96,6 +93,8 @@ echo  " <div class=card  style=margin: auto; width: 18rem; border-collapse: sepa
  echo "<h5 class=card-title>Ataque4: $filas[Ataque4]</h5>";
  echo "<h5 class=card-title>Region: $filas[Region]</h5>";
     
+ echo "<a href='eliminar_prod.php?ID=".$filas['ID']."''>Eliminar</a>"; echo "-----";
+  echo "<a href='modif_prod1.php?ID=".$filas['ID']."''>Modificar</a>";
   echo "</div>";
 echo "</div> ";
 
@@ -109,23 +108,12 @@ echo "</div> ";
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
 
 
 
 <script>
+ 
   document.getElementById('contenido2').style.display = 'none';
   function ocultar(){
 document.getElementById('contenido').style.display = 'none';

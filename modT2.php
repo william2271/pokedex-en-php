@@ -1,9 +1,9 @@
 <?php
 	include 'conexion.php';
 
-	ModificarProducto($_POST['ID'],$_POST['Tipo']);
+	ModificarTipo($_POST['ID'],$_POST['Tipo']);
 
-	function ModificarProducto($ID,$Tipo)
+	function ModificarTipo($ID,$Tipo)
 	{
 		$servidor = "localhost:3307";
 		$usuario = "root";
@@ -15,6 +15,6 @@
 ?>
 
 <script type="text/javascript">
-	alert("Producto Modificado exitosamente");
+	alert("Tipo Modificado exitosamente");
 	window.location.href='nuevoT1.php';
 </script>	

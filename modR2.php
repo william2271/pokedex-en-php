@@ -1,9 +1,9 @@
 <?php
 	include 'conexion.php';
 
-	ModificarProducto($_POST['ID'],$_POST['Region']);
+	ModificarRegion($_POST['ID'],$_POST['Region']);
 
-	function ModificarProducto($ID,$Region)
+	function ModificarRegion($ID,$Region)
 	{
 		$servidor = "localhost:3307";
 		$usuario = "root";
@@ -15,6 +15,6 @@
 ?>
 
 <script type="text/javascript">
-	alert("Producto Modificado exitosamente");
+	alert("Region Modificado exitosamente");
 	window.location.href='nuevoR1.php';
 </script>	

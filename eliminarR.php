@@ -16,6 +16,6 @@ include "conexion.php";
 ?>
 
 <script type="text/javascript">
-	alert("Producto Eliminado exitosamente");
+	alert("Region Eliminado exitosamente");
 	window.location.href='nuevoR1.php';
 </script>
