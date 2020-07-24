@@ -56,8 +56,8 @@
           echo "<td>"; echo $filas['Ataque3']; echo "</td>";
           echo "<td>"; echo $filas['Ataque4']; echo "</td>";
           echo "<td>"; echo $filas['Region']; echo "</td>";
-          echo "<td>  <a href='modif_prod1.php?ID=".$filas['ID']."'> <button type='button' class='btn btn-success'>Modificar</button> </a> </td>";
-          echo "<td> <a href='eliminar_prod.php?ID=".$filas['ID']."''><button type='button' class='btn btn-danger'>Eliminar</button></a> </td>";
+          echo "<td>  <a href='modP1.php?ID=".$filas['ID']."'> <button type='button' class='btn btn-success'>Modificar</button> </a> </td>";
+          echo "<td> <a href='eliminarP.php?ID=".$filas['ID']."''><button type='button' class='btn btn-danger'>Eliminar</button></a> </td>";
         echo "</tr>";
       }
 
@@ -93,8 +93,8 @@ echo  " <div class=card  style=margin: auto; width: 18rem; border-collapse: sepa
  echo "<h5 class=card-title>Ataque4: $filas[Ataque4]</h5>";
  echo "<h5 class=card-title>Region: $filas[Region]</h5>";
     
- echo "<a href='eliminar_prod.php?ID=".$filas['ID']."''>Eliminar</a>"; echo "-----";
-  echo "<a href='modif_prod1.php?ID=".$filas['ID']."''>Modificar</a>";
+ echo "<a href='eliminarP.php?ID=".$filas['ID']."''>Eliminar</a>"; echo "-----";
+  echo "<a href='modP1.php?ID=".$filas['ID']."''>Modificar</a>";
   echo "</div>";
 echo "</div> ";
 

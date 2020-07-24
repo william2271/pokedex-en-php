@@ -53,7 +53,7 @@ $usuario = "root";
   	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
   		<span> <h1>Modificar</h1> </span>
   		<br>
-	  <form action="modif_prod2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
+	  <form action="modP2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
   	<input type="hidden" name="ID" value="<?php echo $_GET['ID']?> ">
   		<label>Foto: </label>
   		<input type="file" id="Foto" name="Foto"; value="<?php echo $consulta[1] ?>" ><br>

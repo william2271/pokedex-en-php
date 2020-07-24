@@ -19,7 +19,7 @@
   	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
   		<span> <h1>Registrar pokemon</h1> </span>
   		<br>
-	  <form action="nuevo_prod2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
+	  <form action="nuevoP2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
   		
   		<input type="hidden" id="ID" name="ID"><br>
   		
