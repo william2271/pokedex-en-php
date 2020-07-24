@@ -56,7 +56,7 @@ $usuario = "root";
   	<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
   		<span> <h1>Modificar</h1> </span>
   		<br>
-	  <form action="nuevo_prod2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
+	  <form action="modif_prod2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
   	<input type="hidden" name="ID" value="<?php echo $_GET['ID']?> ">
   		<label>Foto: </label>
   		<input type="file" id="Foto" name="Foto"; value="<?php echo $consulta[1] ?>" ><br>
@@ -72,7 +72,7 @@ $usuario = "root";
           $query = $conexion -> query ("SELECT * FROM Tipo");
           while ($valores = mysqli_fetch_array($query)) {
 
-echo '<option value="'.$valores["ID"].'">'.$valores["Tipo"].'</option>';
+echo '<option value="'.$valores["Tipo"].'">'.$valores["Tipo"].'</option>';
           }
         ?>
   
@@ -97,7 +97,7 @@ echo '<option value="'.$valores["ID"].'">'.$valores["Tipo"].'</option>';
           $query = $conexion -> query ("SELECT * FROM Region");
           while ($valores = mysqli_fetch_array($query)) {
 
-echo '<option value="'.$valores["ID"].'">'.$valores["Region"].'</option>';
+echo '<option value="'.$valores["Region"].'">'.$valores["Region"].'</option>';
           }
         ?>
   

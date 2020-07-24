@@ -2,14 +2,14 @@
 
 include "conexion.php";
 
-	EliminarP($_GET['ID']);
+	EliminarT($_GET['ID']);
 
-	function EliminarP($ID)
+	function EliminarT($ID)
 	{
 			$servidor = "localhost:3307";
 	$usuario = "root";
 			$conexion = mysqli_connect( $servidor, $usuario, "","pokedex" );
-		$sentencia="DELETE FROM pokemon WHERE ID = $ID ";
+		$sentencia="DELETE FROM Tipo WHERE ID = $ID ";
 	
 		mysqli_query($conexion,$sentencia);
 	}
@@ -17,5 +17,5 @@ include "conexion.php";
 
 <script type="text/javascript">
 	alert("Producto Eliminado exitosamente");
-	window.location.href='index.php';
+	window.location.href='nuevoT1.php';
 </script>
