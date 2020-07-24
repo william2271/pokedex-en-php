@@ -42,7 +42,8 @@
       {
         echo "<tr>";
           echo "<td>"; echo $filas['ID']; echo "</td>";
-          echo "<td>"; echo $filas['Foto']; echo "</td>";
+           echo "<td>"; echo "<img src=$filas[Foto].jpg  ALT=imagen width=100 height=100>"; echo "</td>";
+          
          
           echo "<td>"; echo $filas['Nombre']; echo "</td>";
           echo "<td>"; echo $filas['Tipo']; echo "</td>";
