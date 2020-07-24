@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,6 +17,12 @@
 <div class="todo">
   
   <div id="contenido">
+  <button type="button"onclick=ocultar1() class="btn btn-danger">Mostrar tabla</button>
+<button type="button" onclick=ocultar() class="btn btn-warning">mostrar tumbnail</button>
+
+
+
+
   	<table class="table table-dark" style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
   		<thead>
   			<th>ID.</th>
@@ -61,10 +68,76 @@
   	</table>                                          
   </div>
   
+<div id = contenido2>
+
+<button type="button"onclick=ocultar1() class="btn btn-danger">Mostrar tabla</button>
+<button type="button" onclick=ocultar() class="btn btn-warning">mostrar tumbnail</button>
+
+<?php
+
+include "conexion.php";
+      $sentencia="SELECT * FROM pokemon";
+      $resultado=mysqli_query($conexion,$sentencia);
+while($filas=mysqli_fetch_array($resultado))
+{
+echo  " <div class=card  style=margin: auto; width: 18rem; border-collapse: separate; border-spacing: 10px 5px;> " ;
+
+
+
+ echo "<img src=$filas[Foto].jpg ALT=imagen width=100 height=100 class=card-img-top alt=>";
+
+ echo" <div class=card-body>";
+ echo "<h5 class=card-title>ID: $filas[ID]</h5>";
+ echo "<h5 class=card-title>Nombre: $filas[Nombre]</h5>";
+ echo "<h5 class=card-title>Tipo: $filas[Tipo]</h5>";
+ echo "<h5 class=card-title>Ataque1: $filas[Ataque1]</h5>";
+ echo "<h5 class=card-title>Ataque2: $filas[Ataque2]</h5>";
+ echo "<h5 class=card-title>Ataque3: $filas[Ataque3]</h5>";
+ echo "<h5 class=card-title>Ataque4: $filas[Ataque4]</h5>";
+ echo "<h5 class=card-title>Region: $filas[Region]</h5>";
+    
+  echo "</div>";
+echo "</div> ";
+
+ }
+
+?>
+
+
 
 
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<script>
+  document.getElementById('contenido2').style.display = 'none';
+  function ocultar(){
+document.getElementById('contenido').style.display = 'none';
+document.getElementById('contenido2').style.display = 'block';
+}
+function ocultar1(){
+document.getElementById('contenido2').style.display = 'none';
+document.getElementById('contenido').style.display = 'block';
+}
+
+
+</script>
 
 </body>
 </html>
